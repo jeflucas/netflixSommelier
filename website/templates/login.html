@@ -1,9 +1,27 @@
-{% extends "base.html "%}
-{% block title %}Nfx Sommelier Login{% endblock %}
+{% extends "base.html "%} {% block title %}Nfx Sommelier Login{% endblock %} {%
+block content %}
+<form action="" method="post">
+    <h3 align="center">Sign In</h3>
+    <div class="form-group">
+      <label for="email">E-mail Address:</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="Enter your e-mail here"
+      />
+      <label for="password1">Password:</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        name="password"
+        placeholder="Enter your password here"
+      />
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary"> Submit </button>
+  </form>
 
-{% block content %}
-<h1>This is the login page</h1>
-{% if boolean == True %}
-Yes it's true
-{% endif %}
 {% endblock%}
