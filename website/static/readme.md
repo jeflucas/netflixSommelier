@@ -1,0 +1,1 @@
+in the static folder I need to put images and js files
