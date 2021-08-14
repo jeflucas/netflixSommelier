@@ -1,6 +1,12 @@
-{% extends "base.html "%}
-{% block title %}Nfx Sommelier Sign Up{% endblock %}
-
+{% extends "base.html "%} {% block title %}Nfx Sommelier Sign Up{% endblock %}
 {% block content %}
-<h1>This is the sign up page</h1>
+
+<form action="" method="post">
+  <h3 align="center"> Sign Up</h3>
+  <div class="form-group">
+      <label for="email">E-mail Address:</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter your best e-mail here">
+  </div>
+</form>
+
 {% endblock%}
