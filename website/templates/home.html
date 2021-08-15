@@ -1,6 +1,36 @@
-{% extends "base.html "%}
-{% block title %}Nfx Sommelier Home{% endblock %}
-
-{% block content %}
+{% extends "base.html "%} {% block title %}Nfx Sommelier Home{% endblock %} {%
+block content %}
 <h1>This is the homepage</h1>
+<div class="container">
+  <div class="card">
+    <article class="card-group-item">
+      <header class="card-header">
+        <h6 class="title">Genre</h6>
+      </header>
+      <div class="filter-content">
+        <div class="card-body">
+          <form>
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="genre" id="drama"/>
+              <span class="form-check-label"> Drama </span>
+            </label>
+            <!-- form-check.// -->
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="genre" id="comedy" />
+              <span class="form-check-label"> Comedy </span>
+            </label>
+            <!-- form-check.// -->
+            <label class="form-check">
+              <input class="form-check-input" type="radio" name="genre" id="action"/>
+              <span class="form-check-label"> Action </span>
+            </label>
+            <!-- form-check.// -->
+          </form>
+        </div>
+        <!-- card-body.// -->
+      </div>
+    </article>
+    <!-- card-group-item.// -->
+  </div>
+</div>
 {% endblock%}
