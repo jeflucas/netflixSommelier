@@ -1,4 +1,5 @@
-import axios from "axios";
+
+
 comedy = document.getElementById("comedy").checked
 drama = document.getElementById("drama").checked
 action = document.getElementById("action").checked
@@ -25,8 +26,13 @@ const options = {
     }
   };
   
-  axios.request(options).then(function (response) {
-      console.log(response.data);
-  }).catch(function (error) {
-      console.error(error);
-  });
+  
+  function getMovies(){
+      
+    axios.request(options).then(function (response) {
+          console.log(response.data);
+      }).catch(function (error) {
+          console.error(error);
+      });
+      
+  }
